@@ -1,11 +1,20 @@
 services:
+
+networks:
+  services_internal:
+    external: true
+
   mongo:
     ports: ['27017:27017']
     image: 'mongo:2.6'
+    networks:
+      - services_internal
 
   search:
     ports: ['9200:9200', '9300:9300']
     image: 'elasticsearch:1.4'
+    networks:
+      - services_internal
 
   webapp:
     build:   .
