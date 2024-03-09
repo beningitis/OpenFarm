@@ -9,7 +9,7 @@ ENV     PHANTOM_JS_VERSION 2.1.1
 
 # Install phantomjs in /usr/local/bin
 RUN     set -x; \
-  curl -o /tmp/phantomjs.tar.bz2 -SL "https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-${PHANTOM_JS_VERSION}-linux-x86_64.tar.bz2" \
+  curl -o /tmp/phantomjs.tar.bz2 -SL "https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2" \
   && mkdir /tmp/phantomjs \
   && tar -xf /tmp/phantomjs.tar.bz2 -C /tmp/phantomjs --strip-components=1 \
   && mv /tmp/phantomjs/bin/phantomjs /usr/local/bin/ \
