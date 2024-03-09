@@ -3,9 +3,9 @@
 #
 
 FROM       ruby:2.6.3
-MAINTAINER https://github.com/FarmBot/OpenFarm
+MAINTAINER https://github.com/beningitis/OpenFarm
 
-ENV     PHANTOM_JS_VERSION 1.9.8
+ENV     PHANTOM_JS_VERSION 2.1.1
 
 # Install phantomjs in /usr/local/bin
 RUN     set -x; \
